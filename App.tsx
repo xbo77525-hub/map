@@ -4,7 +4,7 @@ import { MapViewer } from './components/MapViewer';
 import { AddMarkerModal } from './components/AddMarkerModal';
 import { DetailPanel } from './components/DetailPanel';
 import { Button } from './components/ui/Button';
-import { Upload, Plus, ZoomIn, ZoomOut, Map as MapIcon, Edit3, Eye, ArrowLeft, Undo2, FileUp } from 'lucide-react';
+import { Upload, ZoomIn, ZoomOut, Map as MapIcon, Edit3, Eye, Undo2, FileUp } from 'lucide-react';
 
 // Default initial data
 const INITIAL_MARKERS: MarkerData[] = [
