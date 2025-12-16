@@ -321,15 +321,6 @@ export default function App() {
     }
   };
 
-  if (activeMarker) {
-    return (
-      <DetailPanel 
-        marker={activeMarker} 
-        onBack={() => setActiveMarker(null)} 
-      />
-    );
-  }
-
   return (
     <div 
       className="h-screen w-screen flex flex-col bg-slate-950 text-slate-200 overflow-hidden relative"
@@ -493,6 +484,14 @@ export default function App() {
           scale={scale}
         />
       </main>
+
+      {/* Detail Modal (Now rendered as overlay) */}
+      {activeMarker && (
+        <DetailPanel 
+          marker={activeMarker} 
+          onBack={() => setActiveMarker(null)} 
+        />
+      )}
 
       {/* Modals */}
       {(tempCoords || editingMarker) && (
