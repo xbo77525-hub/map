@@ -1,0 +1,5 @@
+{
+  "name": "Interactive Map Annotator",
+  "description": "A high-performance interactive map demo allowing users to place markers, upload custom maps, and view detailed documentation for each location.",
+  "requestFramePermissions": []
+}
